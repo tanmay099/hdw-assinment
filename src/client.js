@@ -13,13 +13,5 @@ const client = new ApolloClient({
     cache
 })
 
-const query = gql`{
-    schedule (type: "domestic", status: "completed" , page: 5){
-        matchID
-        seriesName
-      }
-}`
 
-client.query({query}).then(result => console.log(result))
-
-export default cache;
+export default client;

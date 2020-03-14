@@ -40,17 +40,17 @@ export default function GetMatchInfo({ matchID }) {
           </dl> */}
       <dl class="f6 lh-title mv2">
         <dt class="dib b">Host Team:</dt>
-        <dd class="dib ml0 gray">{" " + data.getMatchInfo.homeTeamName}</dd>
+        <dd class="mh1 dib ml0 gray">{data.getMatchInfo.homeTeamName}</dd>
       </dl>
       <dl class="f6 lh-title mv2">
         <dt class="dib b">Against: </dt>
-        <dd class="dib ml0 gray">{" " + data.getMatchInfo.awayTeamName}</dd>
+        <dd class="mh1 dib ml0 gray">{data.getMatchInfo.awayTeamName}</dd>
       </dl>
       <dl class="f6 lh-title mv2">
         <dt class="dib b">Toss:</dt>
-        <dd class="dib ml0 gray">
+        <dd class="mh1 dib ml0 gray">
           {data.getMatchInfo.toss
-            ? " " + data.getMatchInfo.toss
+            ? data.getMatchInfo.toss
             : " info not avialable"}
         </dd>
       </dl>
